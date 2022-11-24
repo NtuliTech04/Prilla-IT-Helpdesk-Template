@@ -23,10 +23,28 @@ body{
     width:100px;
 }
 .user{
-    
+    position: relative;
+    float:right;
+    margin-top: -42px;
+    margin-right: 20px;
 }
-.user-profile{
-    
+.user-profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    vertical-align: middle;
+    border-style: none;
 }
-
+a.user-profile{
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 350;
+    letter-spacing: 1px;
+}
+a.user-profile:hover{
+    color: #f78f31;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
 
