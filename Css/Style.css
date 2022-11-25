@@ -27,6 +27,7 @@ body{
     float:right;
     margin-top: -42px;
     margin-right: 20px;
+
 }
 .user-profile img{
     width: 40px;
@@ -53,6 +54,28 @@ a.user-profile:hover{
     margin-right: 20px;
     border-radius: 10px;
 }
+.user-dropdown-menu a{
+    position: relative;
+    font-size: 15px;
+    top: 5px;
+    padding-left: 20px;
+    color: rgb(17 44 80 / 90%);
+}
+.user-dropdown-menu .fa{
+    padding-right: 5px;
+}
 .user-dropdown-menu a:hover{
+    color: #f78f31;    
     border-radius: 10px;
+    transition: all 0.15s ease-in-out;
+}
+.user-dropdown-menu::before {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    top: 35px;
+    left: 130px;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #f5f5f5;
+    border-left: 12px solid transparent;
 }
