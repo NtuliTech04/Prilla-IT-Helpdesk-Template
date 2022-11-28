@@ -60,6 +60,7 @@ a.user-profile:hover{
     font-size: 15px;
     top: 5px;
     padding-left: 20px;
+    letter-spacing: 1px;
     color: rgb(17 44 80 / 90%);
 }
 .user-dropdown-menu .fa{
