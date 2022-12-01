@@ -86,6 +86,11 @@ a.user-profile:hover{
     text-decoration: none;
 }
 
+.user-dropdown-menu a:active{
+    text-decoration: none;
+    background-color: transparent;
+}
+
 .user-dropdown-menu::before {
     position: absolute;
     display: inline-block;

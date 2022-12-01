@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,10 +16,10 @@
 
     <!--===========js files===========-->
     <script src="script/Js.js"></script>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--==========//js files==========-->
 </head>
+
 <body>
     <section class="top-nav-section">
         <div class="nav-container">
@@ -45,8 +46,23 @@
             </nav>
         </div>
     </section>
+
+    <!--===========User-Dropdown===========-->
     <script type="text/javascript">
-        
+        $(function () {
+            $('.dropdown-toggle').click(function () {
+                $(this).next('.user-dropdown-menu').toggle();
+            });
+
+            $(document).click(function (e) {
+                var target = e.target;
+                if (!$(target).is('.dropdown-toggle') && !$(target).parents().is('.dropdown-toggle')) {
+                    $('.user-dropdown-menu').hide();
+                }
+            });
+        });
     </script>
+    <!--==========//User-Dropdown==========-->
 </body>
+
 </html>
